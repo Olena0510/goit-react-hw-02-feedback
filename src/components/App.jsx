@@ -24,8 +24,8 @@ export class App extends Component  {
 
   countPositiveFeedbackPercentage = () => {
     const { good, neutral, bad } = this.state;
-     return Math.round((good / (good + neutral + bad)) * 100);
-  }
+    return Math.round((good / (good + neutral + bad)) * 100)
+  };
 
   render() {
     const { good, neutral, bad } = this.state;
@@ -38,7 +38,7 @@ export class App extends Component  {
             options={Object.keys(this.state)}
             onLeaveFeedback={this.onLeaveFeedback}
           />
-       <Statistics  
+       <Statistics
        good={good}
        neutral={neutral}
        bad={bad}
@@ -51,3 +51,6 @@ export class App extends Component  {
     )
     }
 }
+
+
+
