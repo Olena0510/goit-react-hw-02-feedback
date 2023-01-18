@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { Notification } from 'components/Notification/Notification';
 
 
-export const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
+export const Statistics = ({ good, neutral, bad, total, positiveFeedback }) => {
     return (
         <div>
             <h2>Statistics</h2>
@@ -12,7 +12,7 @@ export const Statistics = ({ good, neutral, bad, total, positivePercentage }) =>
             <p>Neutral: {neutral} </p>
             <p>Bad: {bad} </p>
             <p>Total: {total} </p>
-            <p>Positive feedback: {positivePercentage}%</p>
+            <p>Positive feedback: {positiveFeedback}%</p>
             </div>
             )}
         </div>
