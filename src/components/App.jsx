@@ -36,16 +36,15 @@ export class App extends Component  {
       <Section title="Please leave feedback">
         <FeedbackOptions
             options={Object.keys(this.state)}
-            onLeaveFeedback={this.onLeaveFeedback}
-          />
+          onLeaveFeedback={this.onLeaveFeedback}>
+          </FeedbackOptions>
        <Statistics
        good={good}
        neutral={neutral}
        bad={bad}
        total={total}
-        positiveFeedback={positiveFeedback}
-      
-      />
+          positiveFeedback={positiveFeedback}>
+          </Statistics>
       
         </Section>
     )

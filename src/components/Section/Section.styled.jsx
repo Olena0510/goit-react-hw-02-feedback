@@ -2,10 +2,10 @@ import styled from "@emotion/styled";
 
 
 export const Wrapper = styled.section`
- padding-top: 24px;
+ padding-top: 20px;
   padding-right: 15px;
   padding-left: 15px;
-  padding-bottom: 24px;
+  padding-bottom: 20px;
   text-align: center;
 `;
 
