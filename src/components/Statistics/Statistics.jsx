@@ -1,18 +1,18 @@
 import PropTypes from 'prop-types';
 import { Notification } from 'components/Notification/Notification';
-
+import { TitleStatistic, Good, Neutral, Bad, Total, Positive } from './Statistics.styled';
 
 export const Statistics = ({ good, neutral, bad, total, positiveFeedback }) => {
     return (
         <div>
-            <h2>Statistics</h2>
+            <TitleStatistic>Statistics</TitleStatistic>
             {total === 0 ? (<Notification message = "There is no feedback"></Notification>) : (
             <div>
-            <p>Good: {good}</p>
-            <p>Neutral: {neutral} </p>
-            <p>Bad: {bad} </p>
-            <p>Total: {total} </p>
-            <p>Positive feedback: {positiveFeedback}%</p>
+            <Good>Good: {good}</Good>
+            <Neutral>Neutral: {neutral} </Neutral>
+            <Bad>Bad: {bad} </Bad>
+            <Total>Total: {total} </Total>
+            <Positive>Positive feedback: {positiveFeedback}%</Positive>
             </div>
             )}
         </div>
